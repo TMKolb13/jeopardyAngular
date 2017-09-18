@@ -1,9 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
-the question is: {{questionInfo?.question | json}}
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<br><br>
+Category: {{questionInfo?.category.title | json}}
+<br><br>
+Question: {{questionInfo?.question | json}}
+
+<br><br>
+Point Value: {{questionInfo?.value | json}}
+<br><br>
+
+Answer: {{questionInfo?.answer | json}}
+
+<br><br>
+
+<div>
+  <input type="text" [(ngModel)]="userAnswer" placeholder="Type your answer here">
 </div>
+
+<br><br>
+
+<div>
+  <button type="submit" id="submitAnswer" (click)="compareAnswer(answer)">Submit Answer</button>
+</div>
+
+<br><br>
+
+<div>Total Score
+  <div id="score">{{userScore}}</div>
+</div>
+
+
 
