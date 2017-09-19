@@ -17,7 +17,7 @@ export class ScoringComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  
   }
 
   compareAnswer(){

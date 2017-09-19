@@ -9,10 +9,6 @@ Question: {{questionInfo?.question | json}}
 Point Value: {{questionInfo?.value | json}}
 <br><br>
 
-Answer: {{questionInfo?.answer | json}}
-
-<br><br>
-
 <app-scoring (buttonClicked)="catchButtonClicked($event)" [questionInfo]="questionInfo"></app-scoring>
 
 
