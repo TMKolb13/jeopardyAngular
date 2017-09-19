@@ -13,21 +13,7 @@ Answer: {{questionInfo?.answer | json}}
 
 <br><br>
 
-<div>
-  <input type="text" [(ngModel)]="userAnswer" placeholder="Type your answer here">
-</div>
-
-<br><br>
-
-<div>
-  <button type="submit" id="submitAnswer" (click)="compareAnswer(answer)">Submit Answer</button>
-</div>
-
-<br><br>
-
-<div>Total Score
-  <div id="score">{{userScore}}</div>
-</div>
+<app-scoring (buttonClicked)="catchButtonClicked($event)" [questionInfo]="questionInfo"></app-scoring>
 
 
 

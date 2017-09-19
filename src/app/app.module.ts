@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { JeopardyService } from './jeopardy.service';
+import { ScoringComponent } from './scoring/scoring.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScoringComponent
   ],
   imports: [
     BrowserModule,

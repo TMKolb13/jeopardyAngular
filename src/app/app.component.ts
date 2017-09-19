@@ -11,13 +11,6 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   questionInfo;
-  userAnswer;
-  userScore: number = 0;
-  score;
-
-
-
-
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -35,24 +28,8 @@ export class AppComponent implements OnInit {
     this.getDataFromService()
   }
 
-  compareAnswer(){
-     console.log(this.userAnswer)
-     console.log(this.questionInfo.answer)
-     console.log(this.userScore)
-
-     if(this.userAnswer===this.questionInfo.answer){
-      this.userScore = this.userScore + this.questionInfo.value
-      this.userAnswer = ''
-      console.log(this.userScore)
-     }
-
-     this.ngOnInit()
-
-    //  this.score.innerHTML = this.userScore
-
-    
-     
-     
+  catchButtonClicked(boolean){
+    this.getDataFromService()
   }
 
 }
