@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class JeopardyService {
 
-  private baseUrl: string = "https://jservice.io/api/random";
+  private baseUrl: string = "http://jservice.io/api/random";
 
   constructor(private http: Http) { }
 
