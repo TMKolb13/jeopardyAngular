@@ -20,10 +20,13 @@ export class AppComponent implements OnInit {
       .subscribe(
         questionInfo => {
           this.questionInfo = questionInfo[0]
+          console.log(this.questionInfo.answer)
         }
       )
   }
 
+
+  //call the api on loading of the component
   ngOnInit(){
     this.getDataFromService()
   }
